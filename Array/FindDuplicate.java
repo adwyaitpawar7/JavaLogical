@@ -7,10 +7,8 @@ public class FindDuplicate {
     Set<Integer> dup = new HashSet<>();
     boolean isExist = false;
     for (int i = 0; i < arr.length; i++) {
-      int count = 0;
       if (dup.contains(arr[i])) {
         isExist = true;
-        count++;
         System.out.println("Duplicate Element :" + arr[i]);
       } else {
         dup.add(arr[i]);
